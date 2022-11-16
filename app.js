@@ -9,7 +9,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-mongoose.connect(process.env.MOGOURI);
+mongoose.connect(process.env.MONGOURI);
 
 app.use('/v1', require('./src/routes'));
 
